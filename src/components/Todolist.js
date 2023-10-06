@@ -34,12 +34,16 @@ const Todolist = () => {
 
                 <div className='showItems'>
 
+                    <button onClick={() => setItems([])}>Remove All</button>
                     {
                         items.map((elem, ind) => {
-                            return (
+                            return (<>
                                 <div className='eachItems'>
-                                    <h5>{elem}  <button onClick={() => deleteItems(ind)}>del</button></h5>
+                                    <p>{elem}  <button onClick={() => deleteItems(ind)}>del</button></p>
+
                                 </div>
+
+                            </>
                             )
                         })
                     }
@@ -47,7 +51,7 @@ const Todolist = () => {
 
                 </div>
 
-                <button onClick={() => setItems([])}>Remove All</button>
+                {/* <button onClick={() => setItems([])}>Remove All</button> */}
 
 
 

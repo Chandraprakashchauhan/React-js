@@ -1,4 +1,4 @@
-import React, { createContext } from 'react';
+import React from 'react';
 import ComA from './ComA';
 import BioData from './BioData';
 
@@ -11,9 +11,7 @@ const UseContext = (props) => {
             <p>name : {props.name}</p>
             <hr />
             <BioData.Provider value={{ firstName: 'Chandra Prakash', lastName: 'Suthar' }}>
-                <ComA name={props.name} />
-
-
+                <ComA />
             </BioData.Provider>
 
 

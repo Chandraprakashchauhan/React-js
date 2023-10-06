@@ -7,7 +7,7 @@ const ComA = (props) => {
             <h1>UseContext Com A</h1>
             <p>name : {props.name}</p>
             <hr />
-            <ComB name={props.name} />
+            <ComB />
 
         </>
     )
