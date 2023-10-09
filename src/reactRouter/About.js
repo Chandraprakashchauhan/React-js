@@ -1,12 +1,15 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const About = () => {
     const navigate = useNavigate();
+    const location = useLocation();
 
     return (
         <>
-            <section className='m-2'>
+            <section className='container'>
+                {location.pathname}
+
                 <h1> About page</h1>
 
                 <button className='btn btn-primary p-1 px-3 ' onClick={() => navigate("/contact")}> Go to Contact</button><br /><br />
@@ -26,4 +29,4 @@ const About = () => {
     )
 }
 
-export default About
+export default About;

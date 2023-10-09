@@ -1,4 +1,4 @@
-.active {
+a.active {
   border-bottom: 3px solid rgba(0, 76, 255, 0.808);
   letter-spacing: 1px;
   border-radius: 8px;
@@ -6,7 +6,7 @@
 
 }
 
-.nav-link {
+a.nav-link {
   color: rgba(0, 76, 255, 0.808);
   margin-left: 15px;
 }
