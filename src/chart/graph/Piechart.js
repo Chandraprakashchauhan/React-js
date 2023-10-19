@@ -17,27 +17,29 @@ const Piechart = () => {
 
     return (
         <>
-            <div>
-                <Chart
-                    type='pie'
-                    width={1000}
-                    height={500}
-                    series={data}
-                    options={{
-                        labels: name,
-                        title: {
-                            text: 'Pie',
-                            style: { fontSize: 20 }
-                        },
-                        subtitle: {
-                            text: 'Pie Chart'
-                        },
-                        noData: { text: 'Empty Data' },
-                        colors: ['#ff9933', '#33ffa4', '#ffd733', '#3333ff', '#ff33c8', '#766cde']
 
-                    }}
-                />
-            </div>
+            <Chart
+                type='pie'
+                width={1300}
+                height={600}
+                series={data}
+
+
+                options={{
+                    labels: name,
+                    title: {
+                        text: 'Pie',
+                        style: { fontSize: 20 }
+                    },
+                    subtitle: {
+                        text: 'Pie Chart'
+                    },
+                    noData: { text: 'Empty Data' },
+                    colors: ['#ff9933', '#33ffa4', '#ffd733', '#3333ff', '#ff33c8', '#766cde']
+
+                }}
+            />
+
         </>
     );
 };

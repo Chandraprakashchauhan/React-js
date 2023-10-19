@@ -1,5 +1,5 @@
 export const nameData = [
-    { name: 'dilip', data: 100 },
+    { name: 'dilip', data: 250 },
     { name: 'boss', data: 700 },
     { name: 'vipul', data: 300 },
     { name: 'cp', data: 400 },
