@@ -5,6 +5,7 @@ export const nameData = [
     { name: 'cp', data: 400 },
     { name: 'deepak', data: 200 },
     { name: 'gokul', data: 600 },
+    { name: 'Himanshu', data: 650 },
 
 ]
 

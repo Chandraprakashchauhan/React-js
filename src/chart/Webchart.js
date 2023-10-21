@@ -24,7 +24,7 @@ const Webchart = () => {
 
                 <ul className="nav justify-content-end text-primary ">
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="/bar">Bar Chart</NavLink>
+                        <NavLink className="nav-link" to="/">Bar Chart</NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink className="nav-link" to="/pie">Pie Chart</NavLink>
@@ -57,7 +57,7 @@ const Webchart = () => {
                     <Routes>
 
 
-                        <Route exact path='/bar' element={<Barchart w={width} h={height} />} />
+                        <Route exact path='/' element={<Barchart w={width} h={height} />} />
                         <Route path='/pie' element={<Piechart w={width} h={height} />} />
                         <Route exact path='/area' element={<Areachart w={width} h={height} />} />
                         <Route exact path='/line' element={<Linechart w={width} h={height} />} />
