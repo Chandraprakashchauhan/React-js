@@ -11,9 +11,12 @@ import Donutchart from "./graph/Donutchart";
 import Stackebar from "./graph/Stackebar";
 import Radialbar from "./graph/Radialbar";
 import Polararea from "./graph/Polararea";
+import Allchart from "./Allchart";
 
 
 const Webchart = () => {
+    const width = '1300';
+    const height = '600';
     return (
         <>
 
@@ -44,20 +47,25 @@ const Webchart = () => {
                     <li className="nav-item">
                         <NavLink className="nav-link" to="/polararea">Polararea Chart</NavLink>
                     </li>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" to="/allchart">All Chart</NavLink>
+                    </li>
 
                 </ul>
                 <div className="container  mt-5  d-flex justify-content-center">
 
                     <Routes>
 
-                        <Route exact path='/bar' element={<Barchart />} />
-                        <Route path='/pie' element={<Piechart />} />
-                        <Route exact path='/area' element={<Areachart />} />
-                        <Route exact path='/line' element={<Linechart />} />
-                        <Route exact path='/donut' element={<Donutchart />} />
-                        <Route exact path='/stackebar' element={<Stackebar />} />
-                        <Route exact path='/radialbar' element={<Radialbar />} />
-                        <Route exact path='/polararea' element={<Polararea />} />
+
+                        <Route exact path='/bar' element={<Barchart w={width} h={height} />} />
+                        <Route path='/pie' element={<Piechart w={width} h={height} />} />
+                        <Route exact path='/area' element={<Areachart w={width} h={height} />} />
+                        <Route exact path='/line' element={<Linechart w={width} h={height} />} />
+                        <Route exact path='/donut' element={<Donutchart w={width} h={height} />} />
+                        <Route exact path='/stackebar' element={<Stackebar w={width} h={height} />} />
+                        <Route exact path='/radialbar' element={<Radialbar w={width} h={height} />} />
+                        <Route exact path='/polararea' element={<Polararea w={width} h={height} />} />
+                        <Route exact path='/allchart' element={<Allchart />} />
 
 
                     </Routes>
